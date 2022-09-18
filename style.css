@@ -51,7 +51,6 @@ h2{
     background-size: cover;
 }
 
-
 .destaque h2{
     font-size: 5rem;
     font-weight: 800;
@@ -250,6 +249,24 @@ footer .container{
     padding: 10px;
     text-align: center;
     border-radius: 5px;
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-80px, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(80px, 0, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform:translate3d(0px, 0px, 0px);
 }
 
 @media (max-width:991px){
