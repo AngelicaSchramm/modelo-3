@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.header{
+    width: 100vw;
+    padding: 2rem 0;
+    background-color: black;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.destaque{
+    width: 100vw;
+    padding: 8rem 0;
+    color: #fff;
+    text-align:center;
+    background: linear-gradient(rgba(0, 0, 0, 0.659),rgba(0, 0, 0, 0.584)), url(img/fundo.png);
+    background-size: cover;
+}
+
+
+.destaque h2{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.destaque p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.whatsapp-button{
+    display: inline;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: green;
+    color: #fff;
+}
+
+.como-podemos{
+    width: 100vw;
+
+    padding: 6rem 0;
+    color: #fff;
+    border-bottom:4px solid rgb(144, 114, 7);
+    border-top: 4px solid rgb(144, 114, 7);
+    background-color: rgb(48, 46, 46);
+}
+
+.como-podemos p{
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.como-podemos h2{
+    line-height: 1;
+}
+
+.como-podemos ion-icon{
+    font-size: 40px;
+}
+
+.traco{
+    width: 30rem;
+    height: 3px;
+    background-color: rgb(144, 114, 7);
+}
+
+.ajudamos-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-ajuda{
+    width: 30%;
+    height: 15rem;
+    padding: 3rem;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(144, 114, 7);
+    font-weight: 700;
+}
+
+.card-ajuda h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.quem{
+    width: 100vw;
+    background-color: rgb(14, 14, 14);
+
+    padding: 6rem 0;
+    color: #fff;
+}
+
+.quem .container{
+    flex-direction: row;
+}
+.quem-img{
+    width: 45%;
+}
+
+.quem-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.quem-text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.quem-text p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    text-align: justify;
+    margin: 2rem 0;
+}
+
+
+.porque{
+    width: 100vw;
+
+    background-color: rgb(48, 46, 46);
+    border-bottom:4px solid rgb(144, 114, 7);
+    border-top: 4px solid rgb(144, 114, 7);
+
+    padding: 6rem 0;
+    color: #fff;
+}
+
+.porque .container{
+    flex-direction: row;
+}
+
+.porque-img{
+    width: 45%;
+}
+
+.porque-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.porque-text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.porque-text li{
+    list-style: none;
+    line-height: 2rem;
+    margin: .5rem 0;
+}
+
+footer{
+    width: 100vw;
+    background-color: rgb(14, 14, 14);
+    padding: 3rem 0;
+    color: #fff;
+}
+
+footer .container{
+    flex-direction: row;
+}
+
+.contato{
+    width: 80%;
+}
+
+.contato h2{
+    margin-bottom: 2rem;
+}
+
+.contato p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: .5rem 0;
+}
+
+.sociais{
+    width: 20%;
+    display: flex;
+    gap: .5rem;
+}
+
+.whatsapp-footer{
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.facebook{
+    background-color: rgb(22, 22, 90);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .container{
+        flex-wrap: wrap;
+        width:90%;
+    }
+
+    .como-podemos p{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .como-podemos h2{
+        text-align: center;
+    }
+    .card-ajuda{
+        width: 100%;
+    }
+    .quem-img{
+        width: 100%;
+    }
+    .quem-text{
+        width: 100%;
+    }
+    .porque-img{
+        width: 100%;
+    }
+    .porque-text{
+        width: 100%;
+    }
+    .contato{
+        width: 100%;
+    }
+
+}
