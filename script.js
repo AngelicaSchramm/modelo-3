@@ -1,14 +1,10 @@
-var elem = document.querySelectorAll('[data-anime]');
-
-function animeScroll(){
-    const windowTop = window.innerHeight;
-    elem.forEach(elements => {
-        let elementPos = elements.getBoundingClientRect().top;
-        if(elementPos <= windowTop / 1.3){
-            elements.classList.add('animate')
+document.addEventListener("scroll", ()=>{
+    let content = document.querySelectorAll('.efeito');
+    content.forEach((el) =>{
+        let contentPosition = el.getBoundingClientRect().top;
+        let screenPosition = window.innerHeight;
+        if(contentPosition < screenPosition/1.3){
+            el.classList.add("animate");
         }
-    })
-}
-
-
-document.addEventListener("scroll", animeScroll());
+    });
+});
